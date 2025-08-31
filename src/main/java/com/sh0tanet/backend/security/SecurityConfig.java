@@ -63,7 +63,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:4200", "https://shinai-dev.github.io/Sh0taNet/")); // origen permitido
+        config.setAllowedOrigins(List.of("http://localhost:4200", "https://shinai-dev.github.io")); // origen permitido
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization", "Content-Type"));
         config.setAllowCredentials(true); // permite cookies/autenticación
